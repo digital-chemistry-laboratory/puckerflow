@@ -1,0 +1,25 @@
+# RDKit baseline conformer generation config
+# Method options: 'etkdg' (default) or 'kdg'
+# Can be overridden via CLI: --method etkdg/kdg --small-torsions/--no-small-torsions
+
+# Seed for reproducibility (set via run_rdkit.sh)
+experiment: rdkit
+seed: 46
+determinism_seed: 46
+
+# Split and data paths (46 placeholder replaced by run script)
+split_json_path: ./data/dictionaries/random_split_46_smiles.json
+all_confs_path: ./data/cache/conformer_dataset/all_conformers_random_split_46.pkl
+mol_dict_path: ./data/orig_mol_dict.pkl
+
+# Output settings (etkdg_small_torsions and TORSIONS placeholders replaced by run script)
+log_dir: ./runs/rdkit_etkdg_small_torsions_46
+max_confs_per_smi: 50
+
+# Evaluation thresholds
+thresholds:
+  - 0.05
+  - 0.075
+  - 0.1
+  - 0.125
+  - 0.15

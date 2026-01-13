@@ -1,0 +1,16 @@
+name: puckerflow
+channels:
+  - conda-forge
+  - defaults
+  - pytorch
+  - pyg
+dependencies:
+  - python=3.9
+  - wandb
+  - numpy=1.26.4
+  - rdkit=2024.03.6
+
+
+# pip install torch==2.1.0+cu118 --index-url https://download.pytorch.org/whl/cu118
+# pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -f https://data.pyg.org/whl/torch-2.1.0+cu118.html
+# pip install e3nn torch_geometric

@@ -1,0 +1,50 @@
+epochs: 300
+batch_size: 32
+lr: 0.001
+val_freq: 10
+gen_model: "last_model"
+scheduler_patience: 5
+
+split_type: random_split
+seed: 42
+determinism_seed: 42
+inference_steps: 30
+max_train_smiles: -1
+max_generated_smiles: -1
+max_confs_per_smi: 50
+
+radius_embed_dim: 50
+in_node_features: 34
+sigma_embed_dim: 32
+num_conv_layers: 4
+max_radius: 5.0
+ns: 32
+nv: 4
+use_second_order_repr: true
+no_batch_norm: false
+no_residual: false
+loss_function: regular_loss
+
+split_json_path:   ./data/dictionaries/random_split_42_smiles.json
+
+cache:              ./data/cache
+conformer_dataset:  ./data/cache/conformer_dataset
+all_confs_path:     ./data/cache/conformer_dataset/all_conformers_random_split_42.pkl
+
+mol_dict_path:      ./data/orig_mol_dict.pkl
+dataset_csv:        ./data/cp_dataset.csv
+sampling:           ./data/sampling
+
+log_dir:            ./runs/run_42
+subfolder:          ./runs/run_42/conformers
+
+xyz_subfolder:      xyz
+sample_subfolder:   sample_confs
+ab_paths_subfolder: ab_paths
+
+thresholds:
+  - 0.05
+  - 0.075
+  - 0.1
+  - 0.125
+  - 0.15

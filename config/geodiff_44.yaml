@@ -1,0 +1,20 @@
+experiment: geodiff
+seed: 44
+determinism_seed: 44
+
+# Split and data paths (44 placeholder replaced by run script)
+split_json_path: ./data/dictionaries/random_split_44_smiles.json
+all_confs_path: ./data/cache/conformer_dataset/all_conformers_random_split_44.pkl
+mol_dict_path: ./data/orig_mol_dict.pkl
+
+# Output settings (METHOD and TORSIONS placeholders replaced by run script)
+log_dir: ./runs/geodiff_44
+max_confs_per_smi: 50
+
+# Evaluation thresholds
+thresholds:
+  - 0.05
+  - 0.075
+  - 0.1
+  - 0.125
+  - 0.15
