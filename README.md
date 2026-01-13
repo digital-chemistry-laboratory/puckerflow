@@ -23,7 +23,7 @@ pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -
 pip install e3nn torch_geometric
 ```
 
-Download and untar the dataset and pre-trained models from [Zenodo](https://doi.org/10.5281/zenodo.18225801). Place the extracted folders in the root directory. To convert the data to the required pickle format, run:
+Download and untar the dataset and pre-trained models from [Zenodo](https://doi.org/10.5281/zenodo.18231948). Place the extracted folders in the root directory. To convert the data to the required pickle format, run:
 ```bash
 bash setup_data.sh
 ```
@@ -62,7 +62,7 @@ year={2026}
 ```
 ## Data availability
 
-All data to reproduce the study can be found on [Zenodo](https://doi.org/10.5281/zenodo.18225801).
+All data to reproduce the study can be found on [Zenodo](https://doi.org/10.5281/zenodo.18231948).
 
 ## Acknowledgements
 This publication was created as part of NCCR Catalysis (grant numbers 180544 and 225147), a National Centre of Competence in Research funded by the Swiss National Science Foundation. The implementation builds on the codebase of [Torsional Diffusion](https://github.com/gcorso/torsional-diffusion), the [RING library](https://github.com/lucianlschan/RING), and [GeoMol](https://github.com/PattanaikL/GeoMol) (refer to [THIRD_PARTY_LICENCES](THIRD_PARTY_LICENSES) for comprehensive licensing details).
