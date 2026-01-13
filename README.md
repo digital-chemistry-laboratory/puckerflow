@@ -31,24 +31,20 @@ bash setup_data.sh
 ## Training
 
 To train the model, run:
-```python
-python3 train.py --config config/<CONFIG_NAME>.yaml
-```
-Configuration files for PuckerFlow are named:
-```
-config/config_<SPLIT_ID>.yaml
+```bash
+python3 train.py --config config/config_<SPLIT_ID>.yaml
 ```
 where <SPLIT_ID> specifies the dataset split to use.
 
 ## Sampling
 To perform sampling and get metrics, run:
-```python
+```bash
 python3 generate.py --config config/<CONFIG_NAME>.yaml
 ```
 
 ## Evaluate benchmarking algorithms
 To get metrics for the other methods evaluated in this work, run:
-```python
+```bash
 python3 eval_comparisons.py --config config/<CONFIG_NAME>.yaml
 ```
 For RDKit, this command generates the conformers, whereas for MCF and GeoDiff it uses samples generated after retraining the models on the puckering data.
@@ -56,7 +52,7 @@ For RDKit, this command generates the conformers, whereas for MCF and GeoDiff it
 ## Citation
 If you use PuckerFlow in your work, please cite:
 
-```bash
+```bibtex
 @article{schaufelberger2026puckerflow,
 title={Generating Cyclic Conformers with Flow Matching in Cremer-Pople Coordinates},
 author={Schaufelberger, Luca and Hartgers, Aline and Jorner, Kjell},
@@ -70,6 +66,4 @@ All data to reproduce the study can be found on [Zenodo](https://doi.org/10.5281
 
 ## Acknowledgements
 This publication was created as part of NCCR Catalysis (grant numbers 180544 and 225147), a National Centre of Competence in Research funded by the Swiss National Science Foundation. The implementation builds on the codebase of [Torsional Diffusion](https://github.com/gcorso/torsional-diffusion), the [RING library](https://github.com/lucianlschan/RING), and [GeoMol](https://github.com/PattanaikL/GeoMol) (refer to [THIRD_PARTY_LICENCES](THIRD_PARTY_LICENSES) for comprehensive licensing details).
-
-
 
