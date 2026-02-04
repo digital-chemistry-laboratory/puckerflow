@@ -23,7 +23,7 @@ pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -
 pip install e3nn torch_geometric
 ```
 
-Download and untar the dataset and pre-trained models from [Zenodo](https://doi.org/10.5281/zenodo.18243479). Place the extracted folders in the root directory. To convert the data to the required pickle format, run:
+Download the dataset and pre-trained models from [Zenodo](https://doi.org/10.5281/zenodo.18243479). Place the .tar.gz file in the root directory. To convert the data to the required format, run:
 ```bash
 bash setup_data.sh
 ```
