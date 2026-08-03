@@ -1,6 +1,6 @@
 # PuckerFlow: Flow Matching in Cremer–Pople Coordinates
 
-**Preprint**: _L. Schaufelberger*, A. Hartgers*, and K. Jorner, “Generating cyclic conformers with flow matching in Cremer-Pople coordinates”, arXiv, 2026._
+**[Preprint](https://arxiv.org/pdf/2601.12859)**: _L. Schaufelberger*, A. Hartgers*, and K. Jorner, “Generating cyclic conformers with flow matching in Cremer-Pople coordinates”, arXiv, 2026._
 
 
 **PuckerFlow** is a generative model for cyclic molecular conformer generation that operates directly in **Cremer–Pople (CP) puckering coordinates**, a low-dimensional internal coordinate system capturing the essential degrees of freedom of ring systems. By learning a **flow-matching** vector field on this manifold, PuckerFlow can efficiently generate **chemically valid, closed rings by design**, without requiring postprocessing or constraint enforcement. Across diverse ring systems, PuckerFlow achieves state-of-the-art results, outperforming GeoDiff, MCF, and RDKit in both precision and coverage across almost all metrics.
